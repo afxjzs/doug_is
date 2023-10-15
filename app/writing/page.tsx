@@ -1,3 +1,4 @@
+// app/writing/page.tsx
 import React from "react"
 import { allPosts } from "@/.contentlayer/generated"
 import Link from "next/link"
@@ -9,7 +10,7 @@ const WritingPage = () => {
 	return (
 		<div className="prose dark:prose-invert">
 			<h1>Doug is... writing</h1>
-			<p>Articles and blog posts that I've written.</p>
+			<p>Articles and blog posts that I&apos;ve written.</p>
 			{allPosts.map((post) => (
 				<article key={post._id}>
 					<Link href={post.slug}>
